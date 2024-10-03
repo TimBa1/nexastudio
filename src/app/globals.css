@@ -1,0 +1,286 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "vertigo";
+  src: url("../assests/vertrio/Vertrio.ttf");
+}
+
+:root {
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+body {
+  background-color: #141414;
+  color: white;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, blue, purple);
+  height: 1px;
+}
+
+.glass {
+  border-radius: 20px;
+  background: var(
+    --Black-Gradient,
+    linear-gradient(
+      180deg,
+      rgba(30, 30, 30, 0.5) 0%,
+      rgba(78, 78, 78, 0.5) 100%
+    )
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 2px 6px -2px rgba(255, 255, 255, 0.3) inset,
+    0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+
+  @media only screen and (max-width: 900px) {
+    border-radius: 0;
+    background:#141414;
+    box-shadow:none;
+  }
+}
+
+.glass-bg {
+  background: var(
+    --Black-Gradient,
+    linear-gradient(
+      180deg,
+      rgba(30, 30, 30, 0.5) 0%,
+      rgba(78, 78, 78, 0.5) 100%
+    )
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 2px 6px -2px rgba(255, 255, 255, 0.3) inset,
+    0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.bg-skylux {
+  background-image: url("../assests/skylux/Airplane\ Edit\ 2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
+}
+
+.bg-bloom {
+  background-image: url("../assests/bloom/Hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
+}
+
+.bg-pure {
+  background-image: url("../assests/pure-journey/PJC\ Shoes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .bg-bloom {
+    height: 40vh;
+  }
+  .bg-skylux {
+    height: 40vh;
+  }
+  .bg-pure{
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-bloom {
+    height: 23vh;
+    margin-top: 4rem;
+    
+  }
+  .bg-skylux {
+    height: 40vh;
+  }
+  .bg-pure{
+    height: 35vh;
+  }
+}
+
+
+@keyframes rot {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.bg-back {
+  background-image: url("../assests/first-bg1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 110vh;
+  margin-top: -2rem;
+  padding-top: 5rem;
+  backface-visibility: 0.24;
+
+  @media only screen and (max-width: 600px) {
+    height: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+
+select,
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.5px solid var(--White, #fff);
+  background: rgba(255, 255, 255, 0.07);
+  height: 60px;
+  width: 100%;
+  color: white;
+}
+
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari/Edge */
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+textarea {
+  padding: 10px;
+  border: 0.5px solid var(--White, #fff);
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  height: 200px;
+  width: 100%;
+}
+
+select:focus,
+textarea:focus,
+input:focus {
+  border: 1px solid blue;
+  outline: none;
+}
+
+select {
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.07) !important;
+}
+
+select::-ms-expand {
+  display: none;
+  background: rgba(255, 255, 255, 0.07) !important;
+}
+
+#select {
+  -moz-border-radius: 9px 9px 9px 9px;
+  -webkit-border-radius: 9px 9px 9px 9px;
+  border-radius: 9px 9px 9px 9px;
+  box-shadow: 1px 1px 11px #330033;
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: white;
+}
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-select select {
+  appearance: none; /* Removes the default dropdown icon */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent; /* Makes the background of the select transparent */
+  width: 100%;
+  padding: 10px;
+  border: 0.5px solid var(--White, #fff);
+  border-radius: 5px;
+}
+.custom-select select option {
+  background-color: rgb(48, 48, 48); /* Change dropdown background */
+  color: white; /* Change dropdown text color */
+  padding: 20px 0;
+}
+
+/* Create a custom dropdown icon */
+.custom-select::after {
+  content: '\25BC'; /* Unicode for down arrow */
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+/* Optional: Add some styling for when the select box is focused */
+.custom-select select:focus {
+  border-color: #007bff;
+}
+
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .btn-outline {
+    @apply lg:w-[250px] hover:bg-white hover:text-black focus:bg-blue-500 focus:text-white w-[190px] text-sm md:text-base font-medium md:font-semibold h-[55px] lg:h-[65px] text-[14px] flex uppercase justify-center items-center rounded-[10px] text-white border-white border-[2px];
+  }
+  .btn-outline-sm {
+    @apply lg:w-[170px] focus:bg-blue-500 hover:bg-white hover:text-black focus:text-white w-[133px] text-sm md:text-base font-medium md:font-semibold h-[55px] lg:h-[65px] text-[14px] flex uppercase justify-center items-center rounded-[10px] text-white border-white border-[2px];
+  }
+  .btn-grad {
+    @apply w-[280px] hover:scale-90 hover:transition-all  h-[60px] lg:mt-0 mt-[2rem] text-[16px] font-semibold flex uppercase justify-center items-center  rounded-[60px] text-white bg-gradient-to-r from-[blue] to-[purple];
+  }
+
+  .nav-text {
+    @apply text-[16px] font-medium text-[#767676];
+  }
+
+  .header-title {
+    @apply lg:text-[150px] text-[55px] font-[vertigo] lg:leading-[145px] font-medium;
+  }
+
+  .head-title {
+    @apply lg:text-[50px] text-[35px]  mb-[1rem] font-semibold;
+  }
+  .head-text {
+    @apply lg:text-[20px] text-[15px];
+  }
+  .blog-text{
+    @apply lg:mt-10 mt-8 lg:leading-10 leading-7 lg:text-[20px] text-[14px];
+  }
+  .blog-sub-text{
+    @apply lg:mt-10 mt-8 lg:leading-10 leading-7 lg:text-[32px] text-[20px] lg:font-normal font-medium;
+  }
+  .box-title {
+    @apply lg:text-[30px] text-[23px] mt-[1rem] font-medium;
+  }
+  .box-text {
+    @apply lg:text-[16px] text-[14px] lg:leading-8 mt-[5px];
+  }
+}
