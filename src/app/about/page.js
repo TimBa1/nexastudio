@@ -19,6 +19,7 @@ import p5 from '../../assests/Frame 2021.png'
 import rt1 from '../../assests/material-symbols_branding-watermark.svg'
 import rt2 from '../../assests/material-symbols_motion-mode.svg'
 import rt3 from '../../assests/ant-design_product-filled.svg'
+import rt4 from '../../assests/icons/ph_plant-fill.svg'
 
 
 
@@ -177,8 +178,8 @@ function About() {
           </div>
           <div data-aos="fade-up" className='lg:flex hidden mt-12  gap-5'>
             <div className='w-[300px] group/item h-[450px] flex flex-col justify-end py-4 px-[15px] bg-white hover:bg-[#0E45E6] text-black rounded-[10px]'>
-              <div></div>
-              <div className='text-[30px] group/edit group-hover/item:pb-3 group-hover/item:border-b-black group-hover/item:border-b-[1px] transition-all duration-300 ease-in-out'>
+            <div className='absolute top-3 left-3'><Image src={rt4} alt={'me'} /></div>
+              <div className='text-[30px] group/edit group-hover/item:pb-3 group-hover/item:border-b-white group-hover/item:border-b-[1px] transition-all duration-300 ease-in-out'>
                 <p className='text-[12px] font-medium underline group-hover/item:text-white'>01</p>
                 <p className='w-[50%] group-hover/item:text-white'>
                   Brand Strategy
@@ -192,7 +193,7 @@ function About() {
               {/* Positioned at the top */}
               <div className='absolute top-3 left-3'><Image src={rt1} alt={'me'} /></div>
 
-              <div className='text-[30px] group/edit group-hover/item:pb-3 group-hover/item:border-b-black group-hover/item:border-b-[1px]'>
+              <div className='text-[30px] group/edit group-hover/item:pb-3 group-hover/item:border-b-white group-hover/item:border-b-[1px]'>
                 <p className='text-[12px] font-medium underline group-hover/item:text-white'>02</p>
                 <p className='w-[50%] group-hover/item:text-white'>Brand Identity</p>
               </div>
@@ -204,7 +205,7 @@ function About() {
             </div>
             <div className='w-[300px] group/item relative h-[450px] flex flex-col justify-end py-4 px-[15px] bg-white hover:bg-[#0E45E6] text-black  rounded-[10px]'>
               <div className='absolute top-3 left-3'><Image src={rt3} alt={'me'} /></div>
-              <div className='text-[30px] group/edit group-hover/item:pb-3  group-hover/item:border-b-black group-hover/item:border-b-[1px]'>
+              <div className='text-[30px] group/edit group-hover/item:pb-3  group-hover/item:border-b-white group-hover/item:border-b-[1px]'>
                 <p className='text-[12px]  font-medium underline group-hover/item:text-white'>03</p>
                 <p className='w-[50%] group-hover/item:text-white'>
                   Product Design
@@ -215,7 +216,7 @@ function About() {
             </div>
             <div className='w-[300px] relative group/item  h-[450px] flex flex-col justify-end py-4 px-[15px] bg-white hover:bg-[#0E45E6] text-black  rounded-[10px]'>
               <div className='absolute top-3 left-3'><Image src={rt2} alt={'me'} /></div>
-              <div className='text-[30px] group/edit group-hover/item:pb-3  group-hover/item:border-b-black group-hover/item:border-b-[1px]'>
+              <div className='text-[30px] group/edit group-hover/item:pb-3  group-hover/item:border-b-white group-hover/item:border-b-[1px]'>
                 <p className='text-[12px]  font-medium underline group-hover/item:text-white'>04</p>
                 <p className='w-[50%] group-hover/item:text-white'>
                   Motion Design

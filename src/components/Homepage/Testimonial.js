@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import avatar from '../../assests/avatar.svg'
+import ellipse from '../../assests/icons/Ellipse 71.svg'
 import vid from '../../assests/Frame 3085.png'
 import video from '../../assests/video.MP4'
 import Image from 'next/image'
@@ -26,7 +27,7 @@ function Testimonial() {
                 </div>
                 <div className='lg:w-[70%]'>
                     <div className='head-text'>
-                       <span className='text-[#FFBC01]'> Formerly known as Nexa Hub</span>, Nexa Studio is more than just a design agency. Our clients
+                       <span className='bg-[#0E45E6] text-white'> Formerly known as Nexa Hub</span>, Nexa Studio is more than just a design agency. Our clients
                         see us as a valuable partner, offering mentorship and strategic guidance that leads to real
                         business success.
                     </div>
@@ -51,7 +52,7 @@ function Testimonial() {
                 <div className='lg:min-w-[540px] mr-[2rem] min-w-[298px] bg-gradient-to-t from-[rgba(78,78,78,0.5)] to-[rgba(30,30,30,0.5)] glass-bg rounded-[20px] px-[15px] py-[25px] lg:px-[25px] lg:py-[30px]'>
                     <p className='box-text'>Ohh My! The designs are so beautiful and eye catchy, I really love the color pallet you used for my brand, it came out so well, thank you so much Nexa Hub yours stood out among all the designers I’ve worked with.</p>
                     <div className='flex gap-6 mt-10 lg:mt-16'>
-                        <Image src={'https://res.cloudinary.com/djaurbhw8/image/upload/v1727893831/Ellipse_71_qz9ezd.jpg'} height={50} width={50} className='w-[70px] rounded-[50%] lg:w-[100px]' alt='img' />
+                        <Image src={ellipse} className='w-[70px] rounded-[50%] lg:w-[100px]' alt='img' />
                         <div className=''>
                             <div className='lg:[24px] lg:text-[32px] text-[20px] mt-3 font-medium'>
                                 Rosepeditta

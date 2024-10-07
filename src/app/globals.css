@@ -248,10 +248,10 @@ select::-ms-expand {
   }
 
   .btn-outline {
-    @apply lg:w-[250px] hover:bg-white hover:text-black focus:bg-blue-500 focus:text-white w-[190px] text-sm md:text-base font-medium md:font-semibold h-[55px] lg:h-[65px] text-[14px] flex uppercase justify-center items-center rounded-[10px] text-white border-white border-[2px];
+    @apply lg:w-[250px] hover:bg-white hover:text-black focus:bg-blue-500 focus:text-white w-[190px] text-[12px] md:text-base font-medium md:font-semibold h-[55px] lg:h-[65px] flex uppercase justify-center items-center rounded-[10px] text-white border-white border-[2px];
   }
   .btn-outline-sm {
-    @apply lg:w-[170px] focus:bg-blue-500 hover:bg-white hover:text-black focus:text-white w-[133px] text-sm md:text-base font-medium md:font-semibold h-[55px] lg:h-[65px] text-[14px] flex uppercase justify-center items-center rounded-[10px] text-white border-white border-[2px];
+    @apply lg:w-[170px] focus:bg-blue-500 hover:bg-white hover:text-black focus:text-white w-[133px] text-[12px] md:text-base font-medium md:font-semibold h-[55px] lg:h-[65px]  flex uppercase justify-center items-center rounded-[10px] text-white border-white border-[2px];
   }
   .btn-grad {
     @apply w-[280px] hover:scale-90 hover:transition-all  h-[60px] lg:mt-0 mt-[2rem] text-[16px] font-semibold flex uppercase justify-center items-center  rounded-[60px] text-white bg-gradient-to-r from-[blue] to-[purple];
@@ -262,7 +262,7 @@ select::-ms-expand {
   }
 
   .header-title {
-    @apply lg:text-[150px] text-[55px] font-[vertigo] lg:leading-[145px] font-medium;
+    @apply lg:text-[150px] text-[65px] lg:ml-0 ml-[-8px] font-[vertigo] lg:leading-[145px] font-medium;
   }
 
   .head-title {

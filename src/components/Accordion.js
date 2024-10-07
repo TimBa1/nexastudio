@@ -19,11 +19,11 @@ const AccordionItem = ({ title, content, color }) => {
   return (
     <div data-aos="fade-up"  className=" text-black rounded-lg mb-1">
       <button
-        className={`w-full flex justify-between items-center p-4 focus:outline-none transition-colors duration-200 ${isOpen ? 'bg-[#0E45E6]' : 'bg-white'}`}
+        className={`w-full flex justify-between items-center p-4 focus:outline-none transition-colors duration-200 ${isOpen ? 'bg-[#0E45E6] text-white' : 'bg-white'}`}
         onClick={() => setIsOpen(!isOpen)}
       
       >
-        <span className={`text-lg font-medium hover:bg-red text-gray-800`}>{title}</span>
+        <span className={`text-lg font-medium ${isOpen ? ' text-white' : 'text-black'} hover:bg-red text-gray-800`}>{title}</span>
         <span
           className={`transform transition-transform duration-200 ${isOpen ? 'rotate-180' : 'rotate-0'
             }`}

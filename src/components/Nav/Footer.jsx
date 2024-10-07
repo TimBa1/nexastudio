@@ -12,7 +12,7 @@ function Footer() {
       <div className="lg:w-[90%] pt-[5rem] px-4 lg:px-0 w-full mx-auto">
         <div className="flex mb-[4rem] lg:flex-row flex-col lg:justify-between">
           <div className="flex flex-col items center mb-8 lg:mb-0">
-            <Image src={logo} className="h-[45px] md:w-[120px] w-[80px] ml-[-1rem] mb-[10px]" alt='logo' />
+            <Image src={logo} className="h-[45px] md:w-[120px] w-[80px] lg:ml-[-1rem] mb-[10px]" alt='logo' />
             <div className="flex gap-9">
               <span className="box-text"><Link href='/about'></Link>About</span>
               <span className="box-text"><Link href='/portfolio'></Link>Portfolio</span>

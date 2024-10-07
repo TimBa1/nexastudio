@@ -252,6 +252,14 @@ function Bloom() {
                 </div>
             </div>
             <div className='lg:w-[97%] w-[95%] mt-2 lg:mt-4 mx-auto flex'>
+                <Image src={'https://res.cloudinary.com/djaurbhw8/image/upload/v1728315459/UntitledPresenting-GoogleChrome2024-08-0605-43-551-ezgif.com-video-to-gif-converter_tssuzg.gif'}
+                    width={1920} // original width of the image
+                    height={1080} // original height of the image
+                    alt=''
+                    className='w-full h-auto'
+                />
+            </div>
+            <div className='lg:w-[97%] w-[95%] mt-2 lg:mt-4 mx-auto flex'>
                 <Image src='https://res.cloudinary.com/djaurbhw8/image/upload/v1727524482/Frame_2716_xoupmn.png'
                     width={1920} // original width of the image
                     height={1080} // original height of the image

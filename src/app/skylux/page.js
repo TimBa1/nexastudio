@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import plane from '../../assests/skylux/Airplane GIF.gif'
 import Portfolios from '@components/components/Homepage/Portfolios'
 
 function Skylux() {
@@ -121,7 +122,7 @@ function Skylux() {
                 />
             </div>
             <div className='lg:w-[97%] w-[95%] mt-2 lg:mt-4 mx-auto flex'>
-                <Image src='https://res.cloudinary.com/djaurbhw8/image/upload/v1727445797/UIanimation-ezgif.com-video-to-gif-converter_ypmmvo.gif'
+                <Image src='https://res.cloudinary.com/djaurbhw8/image/upload/v1728315504/UIanimation-ezgif.com-video-to-gif-converter_1_jv01xx.gif'
                     width={1920} // original width of the image
                     height={1080} // original height of the image
                     alt=''
@@ -212,9 +213,8 @@ function Skylux() {
                 </div>
             </div>
             <div className='lg:w-[97%] w-[95%] mt-2 lg:mt-4 mx-auto flex'>
-                <Image src='https://res.cloudinary.com/djaurbhw8/image/upload/v1727446068/AirplaneGIF-ezgif.com-video-to-gif-converter_1_ja2wyv.gif'
-                    width={1920} // original width of the image
-                    height={1080} // original height of the image
+                <Image src={plane}
+                    // original height of the image
                     alt=''
                     className='w-full h-auto'
                 />
@@ -271,14 +271,7 @@ function Skylux() {
                     className='w-full h-auto'
                 />
             </div>
-            {/* <div className='lg:w-[97%] w-[95%] mt-2 lg:mt-4 mx-auto flex'>
-                <Image src={img29}
-                    width={1920} // original width of the image
-                    height={1080} // original height of the image
-                    alt=''
-                    className='w-full h-auto'
-                />
-            </div> */}
+           
 
             <div data-aos="fade-up" className='w-[95%] mt-[5rem] mx-auto lg:w-[90%]'>
                 <div className='lg:text-[60px] font-[vertigo] text-[32px] mb-[1rem]'>Portfolio</div>

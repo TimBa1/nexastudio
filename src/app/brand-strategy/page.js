@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import p3 from '../../assests/brand-strategy/Nexa Brand Strategy Worksheet (1).gif'
 import { useState } from 'react'
-import avatar from '../../assests/avatar.svg'
+import avatar from '../../assests/Ellipse 71.svg'
 import Portfolios from '@components/components/Homepage/Portfolios'
 
 const faq = [
@@ -105,7 +105,7 @@ export default function BrandStrategy() {
           <div data-aos="fade-up" className='lg:text-[48px] mt-14 lg:mt-20 mb-[2rem] text-[32px] font-semibold'>
             Our Approach
           </div>
-          <div className='flex mt-14 lg:mt-20 lg:flex-row flex-col-reverse'>
+          <div className='flex mt-14 lg:mt-20 lg:flex-row lg:justify-between flex-col-reverse'>
             <div className='flex mt-14 lg:mt-0 flex-col lg:w-1/2 w-full'>
               <div data-aos="fade-up" className='lg:leading-10 leading-7 '>We develop critical tools such as brand positioning statements and perceptual maps,
                 ensuring they remain confidential to safeguard your brand’s unique strategy</div>
@@ -114,17 +114,17 @@ export default function BrandStrategy() {
                 roles—consistently reflects the intended brand image, whether that’s fostering a culture of
                 innovation, friendliness, or professionalism.</div>
             </div>
-            <div data-aos="fade-up" className='flex lg:w-1/2 w-full items-center lg:justify-end'><Image src='https://res.cloudinary.com/djaurbhw8/image/upload/v1727565720/Union_jlqvcl.jpg' 
-              width={1920} // original width of the image
-              height={1080} // original height of the image
+            <div data-aos="fade-up" className='flex lg:w-[45%] w-full items-center lg:justify-end'><Image src='https://res.cloudinary.com/djaurbhw8/image/upload/v1728316835/Union_3_cosqvu.png' 
+              width={510} // original width of the image
+              height={380} // original height of the image
               alt=''
               className='w-full h-auto'
             /></div>
           </div>
-          <div className='flex mt-20 lg:flex-row flex-col'>
-            <div data-aos="fade-up" className='flex lg:w-1/2 w-full items-center justify-start'><Image src='https://res.cloudinary.com/djaurbhw8/image/upload/v1727565721/Union_1_gjlmxa.jpg' 
-              width={1920} // original width of the image
-              height={1080} // original height of the image
+          <div className='flex mt-20 lg:flex-row lg:justify-between flex-col'>
+            <div data-aos="fade-up" className='flex lg:w-[45%] w-full items-center justify-start'><Image src='https://res.cloudinary.com/djaurbhw8/image/upload/v1728316838/Union_2_dlm9fd.png' 
+              width={510} // original width of the image
+              height={380} // original height of the image
               alt=''
               className='w-full h-auto'
             /></div>
@@ -190,16 +190,16 @@ export default function BrandStrategy() {
         </div>
         <div className='w-full flex mt-[3rem] no-scrollbar  overflow-x-auto'>
           {
-            [1, 2, 3, 4, 5].map((e) => (
-              <div key={e} className='lg:min-w-[470px] mr-[2rem] glass-bg min-w-[298px] bg-gradient-to-t from-[rgba(78,78,78,0.5)] to-[rgba(30,30,30,0.5)] rounded-[20px] px-[15px] py-[25px] lg:px-[25px] lg:py-[30px]'>
-                <p className='box-text'>“If you ever need a service (remote or not), that can project the details of your mind and communicate your values, Nexa Hub is where you find one. I engaged them to get a design for an affiliate marketing online training I organised. And I wasn&apos;t disappointed.”</p>
+            [1].map((e) => (
+              <div key={e} className='lg:max-w-[470px] mr-[2rem] glass-bg min-w-[298px] bg-gradient-to-t from-[rgba(78,78,78,0.5)] to-[rgba(30,30,30,0.5)] rounded-[20px] px-[15px] py-[25px] lg:px-[25px] lg:py-[30px]'>
+                <p className='box-text'>“Working with Nexa hub has been a productive experience for me. They helped me with a detailed brand strategy and simplified my action plans. With their help, I was able to identify and address critical gaps, significantly enhancing my efficiency in a short timeframe.”</p>
                 <div className='flex gap-6 mt-8'>
                   <Image src={avatar} className='w-[70px] lg:w-[100px]' alt='img' />
                   <div className=''>
                     <div className='lg:[24px] lg:text-[32px] text-[20px] mt-3 font-medium'>
-                      Victor Momodu
+                    Angelica Swift
                     </div>
-                    <p className=' text-[13px]'>Founder Gad Legal Consult</p>
+                    <p className=' text-[13px]'>CEO of Elysian Fashion</p>
                   </div>
                 </div>
               </div>
