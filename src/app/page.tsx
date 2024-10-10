@@ -7,6 +7,7 @@ import Testimonial from "../components/Homepage/Testimonial";
 import Head from "next/head";
 import AutoPlay from "../components/Slider";
 
+
 const image1 = [
   { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727524647/Frame_2981_p4mf7q.png', link: '/bloom' },
   { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727550120/Frame_2606_1_tbfeyd.jpg', link: '/pure-journey' },
