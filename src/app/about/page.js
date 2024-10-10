@@ -25,31 +25,37 @@ import rt4 from '../../assests/icons/ph_plant-fill.svg'
 
 const names = [
   {
-    img: img1,
+    img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1728497424/Frame_3382_nwvtzm.jpg',
     name: "James Raphael",
     role: "Brand Consultant and Strategist"
   },
   {
-    img: img2,
-    name: "Moyo Holiness",
-    role: "Community Manager"
-  }, {
-    img: img3,
+    img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1728497421/Frame_3383_uxqgpy.jpg',
     name: "Ayomide Adegboyega",
     role: "Creative Director/Designer"
   },
   {
-    img: img4,
+    img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1728497422/Frame_3384_ip2pst.png',
     name: "Jerome Oparah",
     role: "Lead Product Designer"
   },
   {
-    img: img6,
-    name: "Anthony Anazodo",
-    role: "Brand/Graphic Designer"
+    img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1728497423/Frame_3385_wikzhj.jpg',
+    name: "Timilehin Bakare",
+    role: "Developer"
   },
   {
-    img: img5,
+    img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1728497423/Frame_3386_au8grn.jpg',
+    name: "T0di Bakare",
+    role: "Content Writer"
+  },
+  {
+    img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1728497423/Frame_3387_rvugy9.jpg',
+    name: "Timilehin Bakare",
+    role: "Developer"
+  },
+  {
+    img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1728497424/Frame_3388_g4hccd.jpg',
     name: "Timilehin Bakare",
     role: "Developer"
   },
@@ -263,9 +269,9 @@ function About() {
           <div className='flex flex-wrap mt-[100px] lg:gap-x-[1rem] gap-y-[3rem] justify-center'>
             {
               names.map((er) => (
-                <div key={er} data-aos="fade-up" className='lg:w-[300px] w-[170px] flex flex-col  items-center '>
-                  <div className='bg-[grey] mb-[1rem] rounded-[50%] lg:h-[200px] h-[160px] w-[160px] lg:w-[200px]'>
-                    <Image src={er.img} alt={'icon'} className='' />
+                <div key={er} data-aos="fade-up" className='lg:min-w-[320px]  rounded-[10px] w-[170px] flex flex-col  items-center '>
+                  <div className='  mb-[1rem] rounded-[10px]  '>
+                    <Image src={er.img} alt={'icon'} width={350} height={350} className='rounded-[20px] ' />
                   </div>
                   <p className='text-normal text-center'>{er.name}</p>
                   <p className='text-[14px] lg:w-full w-[150px] text-center'>{er.role}</p>

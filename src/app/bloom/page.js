@@ -1,6 +1,7 @@
 import React from 'react'
 import Portfolios from '@components/components/Homepage/Portfolios'
 import Image from 'next/image'
+import video from '../../assests/bloom/Untitled (Presenting) - Google Chrome 2024-08-06 05-43-55.mp4'
 
 function Bloom() {
     return (
@@ -259,6 +260,7 @@ function Bloom() {
                     className='w-full h-auto'
                 />
             </div>
+            
             <div className='lg:w-[97%] w-[95%] mt-2 lg:mt-4 mx-auto flex'>
                 <Image src='https://res.cloudinary.com/djaurbhw8/image/upload/v1727524482/Frame_2716_xoupmn.png'
                     width={1920} // original width of the image
@@ -266,6 +268,10 @@ function Bloom() {
                     alt=''
                     className='w-full h-auto'
                 />
+            </div>
+
+            <div className='lg:w-[97%] w-[95%] mt-2 lg:mt-4 mx-auto flex'>
+                <video src={video} loop autoPlay/>
             </div>
 
             <div data-aos="fade-up" className='w-[95%] mt-[5rem] mx-auto lg:w-[90%]'>

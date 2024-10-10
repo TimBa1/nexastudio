@@ -1,26 +1,5 @@
 import React from 'react'
-
-import img1 from '../../assests/pure-journey/Shoe box.jpg'
-import img2 from '../../assests/pure-journey/Business Card (2).png'
-import img3 from '../../assests/pure-journey/Sticker.png'
-import img4 from '../../assests/pure-journey/Visual sticker.png'
-import img5 from '../../assests/pure-journey/Bucket Hat.png'
-import img6 from '../../assests/pure-journey/Badge.png'
 import img7 from '../../assests/pure-journey/Color GIF.gif'
-
-import img8 from '../../assests/pure-journey/Wristband.png'
-import img9 from '../../assests/pure-journey/Favicon.jpg'
-import img10 from '../../assests/pure-journey/Merch 2.png'
-import img11 from '../../assests/pure-journey/Frame 3155.png'
-import img12 from '../../assests/pure-journey/Shoe build.png'
-import img13 from '../../assests/pure-journey/Guide.jpg'
-import img14 from '../../assests/pure-journey/Instagram.jpg'
-import img15 from '../../assests/pure-journey/Visuals.png'
-import img16 from '../../assests/pure-journey/Wallper.jpg'
-import img20 from '../../assests/pure-journey/gif.gif'
-
-import img17 from '../../assests/pure-journey/image_fx_ (1).jpg'
-import img18 from '../../assests/pure-journey/Thank you Card.png'
 import Portfolios from '@components/components/Homepage/Portfolios'
 
 import Image from 'next/image'
@@ -29,7 +8,7 @@ function PureJourney() {
     return (
         <div>
             <div className="bg-pure py-4 px-20 flex items-end">
-                <div data-aos="fade-up" className='lg:flex text-black lg:flex-col hidden'>
+                <div data-aos="fade-up" className='lg:flex text-white lg:flex-col hidden'>
                     <h2 className='lg:text-[64px] font-semibold'>Pure Journey</h2>
                     <h6>Customs</h6>
                 </div>

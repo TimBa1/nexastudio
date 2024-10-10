@@ -47,11 +47,11 @@ export default function AutoPlay({ image, rot }) {
             <div key={r} className="group/item relative" >
               <div className="relative">
                 <Image
-                  className="px-2 group/edit transition-all duration-300 ease-in-out"
+                  className="px-2 group/edit transition-all rounded-[13px] duration-300 ease-in-out"
                   src={r.img}
                   alt="img"
                   width={600}
-                  height={500}
+                  height={900}
                 />
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover/item:bg-opacity-60 transition-all duration-300 ease-in-out"></div>

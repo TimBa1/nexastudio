@@ -23,7 +23,7 @@ const content = [
         buttons: ['Product Design', 'Brand Identity',]
     },
     {
-        img: p4,
+        img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1728496175/HEADER_xxyklv.jpg',
         title: 'Pure Journey Customs',
         text: "Brand Strategy & Identity, Product Design, Web Content",
         href: '/pure-journey',
@@ -47,13 +47,13 @@ function Portfolios({ arrow, wrap, first, last }) {
                     content?.slice(first, last)?.map((e) => (
                         <div key={e} className={`rounded-[20px] ${wrap ? 'w-full lg:w-[46.5%] rounded-[20px]' : "w-full  "} `}>
                             <Link href={e.href}>
-                                <Image data-aos="fade-up" src={e.img} alt='img' objectFit='cover' className={`my-[2rem] w-full ${wrap ? "rounded-t-[20px]" : ""}`} />
+                                <Image data-aos="fade-up" src={e.img} alt='img' objectFit='cover' width={1000} height={700} className={`my-[2rem] w-full ${wrap ? "rounded-t-[20px]" : ""}`} />
                                 <div className={`${wrap ? "" : " lg:w-[93%] w-full mx-auto"}`}>
                                     <div data-aos="fade-up" className='lg:text-[70px] font-[vertigo] leading-8 lg:leading-[70px] text-[35px]'>
                                         {e.title}
                                     </div>
                                     <div data-aos="fade-up" className='flex justify-between items-center'>
-                                        <div className={`${arrow?"lg:gap-3":"lg:gap-6"} mt-2 flex gap-3 lg:mb-0 mb-2`}>
+                                        <div className={`${arrow ? "lg:gap-3" : "lg:gap-6"} mt-2 flex gap-3 lg:mb-0 mb-2`}>
                                             {
                                                 e.buttons.map((e) => (
                                                     <button key={e} className='lg:w-[170px] w-[100px] h-[25px] text-[12px] rounded-[5px] text-[#767676] lg:text-[20px] lg:h-[45px] lg:rounded-[10px] border-[1px] border-[#767676]'>

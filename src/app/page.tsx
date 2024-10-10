@@ -4,24 +4,42 @@ import Header from "../components/Homepage/Header";
 import Project from "../components/Homepage/Project";
 import ChooseUs from "../components/Homepage/ChooseUs";
 import Testimonial from "../components/Homepage/Testimonial";
-import c3 from "../assests/c3.svg";
-import c4 from "../assests/c4.svg";
 import Head from "next/head";
 import AutoPlay from "../components/Slider";
 
-import s1 from "../assests/icons/s1.png";
-import s2 from "../assests/icons/s2.png";
-import s3 from "../assests/icons/s3.png";
-import s4 from "../assests/icons/s4.png";
-import s5 from "../assests/icons/s5.png";
+const image1 = [
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727524647/Frame_2981_p4mf7q.png', link: '/bloom' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727550120/Frame_2606_1_tbfeyd.jpg', link: '/pure-journey' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727439191/Frame_2954_kng2ge.jpg', link: '/skylux' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727550116/Frame_2596_3_gqx0je.jpg', link: '/pure-journey' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727520088/Frame_2709_1_bqdega.jpg', link: '/bloom' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727520085/Frame_2705_zaxbac.jpg', link: '/bloom' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727441391/Frame_2596_2_w4gkum.jpg', link: '/skylux' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727440251/Frame_2607_lloznd.jpg', link: '/skylux' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727520086/Frame_2596_3_i6rfvr.jpg', link: '/bloom' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727550112/Frame_2615_2_waxixi.jpg', link: '/pure-journey' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727439192/Frame_2606_ct9tqu.jpg', link: '/skylux' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727520087/Frame_2596_4_yqu416.jpg', link: '/bloom' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727550115/Frame_2606_2_m6pybf.jpg', link: '/pure-journey' },
+];
+const image2 = [
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727439191/Frame_2954_kng2ge.jpg', link: '/skylux' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727520088/Frame_2708_2_sz9ymd.jpg', link: '/bloom' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727550117/Frame_2597_1_okvghy.jpg', link: '/pure-journey' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727520085/Frame_2709_oy0y6v.jpg', link: '/bloom' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727439192/Frame_2609_2_p2alq8.jpg', link: '/skylux' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727439192/Frame_2596_lxa1da.jpg', link: '/skylux' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727550115/Frame_2596_4_nkskom.jpg', link: '/pure-journey' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727439192/Frame_2596_1_zmz6db.jpg', link: '/skylux' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727550114/Frame_2608_4_vwdqtu.jpg', link: '/pure-journey' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727520085/Frame_2708_rcjy22.jpg', link: '/bloom' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727550114/Frame_2609_4_sctend.jpg', link: '/pure-journey' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727440250/Frame_2608_sf3r8z.jpg', link: '/skylux' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727520086/Frame_2708_1_hzilgb.jpg', link: '/bloom' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727439195/Frame_2609_3_ne9eah.jpg', link: '/skylux' },
+  { img: 'https://res.cloudinary.com/djaurbhw8/image/upload/v1727550114/Frame_2598_tfkfwb.jpg', link: '/pure-journey' },
 
-import s6 from "../assests/icons/s6.png";
-import s7 from "../assests/icons/s7.png";
-import s8 from "../assests/icons/s8.png";
-import s9 from "../assests/icons/s9.png";
-
-const image1 = [{ img: s1, link: '/bloom' }, { img: s2, link: '/pure-journey' }, { img: s3, link: '/skylux' }, { img: s4, link: '/bloom' }, { img: s5, link: '/bloom' },];
-const image2 = [{ img: s6, link: '/pure-journey' }, { img: s7, link: '/skylux' }, { img: s8, link: '/skylux' }, { img: s9, link: '/bloom' }, { img: s1, link: '/bloom' }];
+];
 
 export default function Home() {
   return (
